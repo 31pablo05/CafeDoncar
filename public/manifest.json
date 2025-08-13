@@ -1,0 +1,22 @@
+{
+  "name": "Cafe Doncar - Hamburguesas y Pizzas Gourmet",
+  "short_name": "Cafe Doncar",
+  "description": "Las mejores hamburguesas gourmet y pizzas artesanales con delivery gratis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2e2d2b",
+  "theme_color": "#fdbc5c",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/svg/2(1).svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "business", "lifestyle"],
+  "lang": "es-AR",
+  "scope": "/",
+  "prefer_related_applications": false
+}

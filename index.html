@@ -1,10 +1,92 @@
 <!doctype html>
-<html lang="en">
+<html lang="es-AR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Favicon optimizado -->
+    <link rel="icon" type="image/svg+xml" href="/svg/2(1).svg" />
+    <link rel="apple-touch-icon" href="/svg/2(1).svg" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Viewport responsivo -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <!-- SEO Básico -->
+    <title>Cafe Doncar - Las Mejores Hamburguesas y Pizzas Artesanales | Delivery 24/7</title>
+    <meta name="description" content="🍔 Cafe Doncar: Hamburguesas gourmet, pizzas artesanales y experiencia gastronómica única. ⭐ +500 clientes satisfechos. 🚚 Delivery gratis. ¡Ordena ya!" />
+    <meta name="keywords" content="hamburguesas, pizzas, cafe doncar, delivery, comida rapida, gourmet, artesanal, restaurant, pedidos online, comida a domicilio" />
+    <meta name="author" content="Cafe Doncar" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cafedoncar.com/" />
+    <meta property="og:title" content="Cafe Doncar - Las Mejores Hamburguesas y Pizzas Artesanales" />
+    <meta property="og:description" content="🍔 Hamburguesas gourmet, pizzas artesanales y experiencia gastronómica única. ⭐ +500 clientes satisfechos. 🚚 Delivery gratis." />
+    <meta property="og:image" content="https://cafedoncar.com/images/don1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Cafe Doncar" />
+    <meta property="og:locale" content="es_AR" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://cafedoncar.com/" />
+    <meta name="twitter:title" content="Cafe Doncar - Las Mejores Hamburguesas y Pizzas Artesanales" />
+    <meta name="twitter:description" content="🍔 Hamburguesas gourmet, pizzas artesanales y experiencia gastronómica única. ⭐ +500 clientes satisfechos. 🚚 Delivery gratis." />
+    <meta name="twitter:image" content="https://cafedoncar.com/images/don1.jpg" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cafedoncar.com/" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.placename" content="Argentina" />
+    <meta name="ICBM" content="-34.6037,-58.3816" />
+    
+    <!-- Business Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Cafe Doncar",
+      "image": "https://cafedoncar.com/images/don1.jpg",
+      "description": "Restaurante especializado en hamburguesas gourmet y pizzas artesanales con delivery",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AR",
+        "addressLocality": "Argentina"
+      },
+      "telephone": "+5492804518716",
+      "servesCuisine": ["Hamburguesas", "Pizzas", "Comida Rápida Gourmet"],
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "500"
+      },
+      "openingHours": ["Mo-Su 10:00-23:00"],
+      "hasMenu": "https://cafedoncar.com/#menu",
+      "acceptsReservations": true,
+      "takeaway": true,
+      "delivery": true
+    }
+    </script>
+    
+    <!-- Preload crítico -->
+    <link rel="preload" href="/src/index.css" as="style" />
+    <link rel="preload" href="/images/don1.jpg" as="image" />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//wa.me" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#fdbc5c" />
+    <meta name="msapplication-TileColor" content="#fdbc5c" />
+    
   </head>
   <body>
     <div id="root"></div>
