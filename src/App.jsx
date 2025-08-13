@@ -9,7 +9,7 @@ import BusinessHours from './components/BusinessHours'
 import ReviewsSection from './components/ReviewsSection'
 import Footer from './components/Footer'
 import CartSidebarNew from './components/CartSidebarNew'
-import FloatingActionButtonNew from './components/FloatingActionButtonNew'
+import FloatingActionButton from './components/FloatingActionButton'
 import SearchBar from './components/SearchBar'
 import HowToOrderGuide from './components/HowToOrderGuide'
 import CategoryFilter from './components/CategoryFilter'
@@ -181,7 +181,7 @@ ${orderDetails}
       />
 
       {/* Floating Action Button */}
-      <FloatingActionButtonNew 
+      <FloatingActionButton 
         cartItemsCount={getTotalItems()}
         onCartClick={() => setIsCartOpen(true)}
       />

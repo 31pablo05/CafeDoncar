@@ -6,16 +6,7 @@ export default function FloatingActionButton({ cartItemsCount, onCartClick }) {
 
   const quickOrderWhatsApp = () => {
     const phoneNumber = "5492804518716";
-    const message = encodeURIComponent(`¡Hola Café Doncar! 🍔
-
-Me gustaría hacer un pedido para delivery. ¿Podrían ayudarme con el menú disponible?
-
-📍 Ubicación: 
-🕒 Horario preferido: 
-💬 Comentarios adicionales: 
-
-¡Gracias!`);
-    
+    const message = encodeURIComponent("¡Hola! 👋 Me gustaría hacer un pedido en *Cafe Doncar*. ¿Podrían enviarme el menú actualizado y los métodos de pago disponibles?");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
