@@ -272,7 +272,9 @@ export default function Footer() {
             <Heart className="h-4 w-4 text-red-400 animate-pulse" />
             <span>por</span>
             <a 
-              href="#" 
+              href="https://dev-craft-lake.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
               className="text-red-400 hover:text-red-300 font-bold transition-all duration-300 hover:underline group-hover/dev:scale-105 transform px-2 py-1 rounded-lg hover:bg-red-400/10"
             >
               Pablo Proboste
