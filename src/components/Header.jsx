@@ -88,7 +88,7 @@ export default function Header({ cartItemsCount = 0, onCartClick }) {
             <div className="flex items-center space-x-3 group">
               <div className="relative">
                 <img 
-                  src="/svg/2(1).svg" 
+                  src="/svg/logodonnuevo.svg" 
                   alt="Cafe Doncar" 
                   className="h-12 w-12 lg:h-14 lg:w-14 transition-transform duration-300 group-hover:scale-110 drop-shadow-lg"
                 />
@@ -96,7 +96,7 @@ export default function Header({ cartItemsCount = 0, onCartClick }) {
               <div className="block">
                 <h1 className="text-xl lg:text-3xl font-bold drop-shadow-sm">
                   <span className="text-gray-900">Cafe</span>
-                  <span className="text-amber-500 ml-1">Doncar</span>
+                  <span className="text-white ml-1">Doncar</span>
                 </h1>
               </div>
             </div>

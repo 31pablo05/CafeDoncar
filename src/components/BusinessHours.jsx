@@ -31,17 +31,14 @@ export default function BusinessHours() {
       const [openHour, openMinute] = todaySchedule.open.split(':').map(Number);
       const [closeHour, closeMinute] = todaySchedule.close.split(':').map(Number);
       
-      // Convertir a minutos para comparar más fácil
       const currentMinutes = currentHour * 60 + currentMinute;
       const openMinutes = openHour * 60 + openMinute;
       let closeMinutes = closeHour * 60 + closeMinute;
       
-      // Si cierra después de medianoche, sumar 24 horas
       if (closeHour < openHour) {
         closeMinutes += 24 * 60;
       }
       
-      // Si estamos después de medianoche y el horario cruza medianoche
       if (currentHour < 6 && closeHour < openHour) {
         const currentMinutesAdjusted = currentMinutes + 24 * 60;
         setIsOpen(currentMinutesAdjusted >= openMinutes && currentMinutesAdjusted <= closeMinutes);
@@ -57,45 +54,59 @@ export default function BusinessHours() {
 
   return (
     <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
-      {/* Elementos decorativos de fondo */}
+      {/* Fondos decorativos */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-red-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-blue-500/5 via-purple-500/10 to-pink-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Título de la sección */}
-        <div className="text-center mb-16">
-          <div className="inline-block mb-6">
-            <div className="flex items-center gap-3 bg-gradient-to-r from-amber-500/20 to-orange-500/20 backdrop-blur-sm border border-amber-500/30 rounded-2xl px-6 py-3">
-              <Clock className="h-6 w-6 text-amber-400" />
-              <span className="text-amber-300 font-semibold text-lg">Horarios y Contacto</span>
-            </div>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
-            ESTAMOS
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500">
-              DISPONIBLES
-            </span>
-          </h2>
-          
-          <div className="flex justify-center items-center gap-4 mb-6">
-            <div className="h-px w-20 bg-gradient-to-r from-transparent to-amber-500"></div>
-            <div className="w-3 h-3 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full animate-pulse"></div>
-            <div className="h-px w-20 bg-gradient-to-l from-transparent to-amber-500"></div>
-          </div>
-          
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
-            Conocé nuestros horarios de atención y cómo contactarnos
-          </p>
-        </div>
 
+        {/* Título + logo lado a lado */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+          {/* Texto a la izquierda */}
+          <div className="text-center md:text-left flex-1">
+            <div className="inline-block mb-6">
+              <div className="flex items-center gap-3 bg-gradient-to-r from-amber-500/20 to-orange-500/20 backdrop-blur-sm border border-amber-500/30 rounded-2xl px-6 py-3">
+                <Clock className="h-6 w-6 text-amber-400" />
+                <span className="text-amber-300 font-semibold text-lg">Horarios y Contacto</span>
+              </div>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+              ESTAMOS
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500">
+                DISPONIBLES
+              </span>
+            </h2>
+            
+            <div className="flex justify-center md:justify-start items-center gap-4 mb-6">
+              <div className="h-px w-20 bg-gradient-to-r from-transparent to-amber-500"></div>
+              <div className="w-3 h-3 bg-gradient-to-r from-amber-400 to-orange-500 rounded-full animate-pulse"></div>
+              <div className="h-px w-20 bg-gradient-to-l from-transparent to-amber-500"></div>
+            </div>
+            
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              Conocé nuestros horarios de atención y cómo contactarnos
+            </p>
+          </div>
+
+          {/* Logo a la derecha */}
+          <div className="flex justify-center md:justify-end flex-1">
+            <video 
+              src="/videos/Diseño sin título (1).mp4" 
+              autoPlay 
+              loop 
+              muted 
+              playsInline 
+              className="w-48 h-48 object-contain rounded-xl shadow-lg"
+            />
+          </div>
+        </div>
         {/* Grid principal */}
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 mb-12">
           
-          {/* Estado Actual - Mejorado */}
+          {/* Estado Actual */}
           <div className="xl:col-span-1">
             <div className="relative group h-full">
               <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/20 via-orange-500/30 to-red-500/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -143,7 +154,7 @@ export default function BusinessHours() {
             </div>
           </div>
 
-          {/* Horarios - Completamente rediseñado */}
+          {/* Horarios */}
           <div className="xl:col-span-2">
             <div className="relative group h-full">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-purple-500/30 to-pink-500/20 rounded-3xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -239,7 +250,7 @@ export default function BusinessHours() {
           </div>
         </div>
 
-        {/* Información de Contacto - Mejorada */}
+        {/* Información de Contacto */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           {/* Ubicación */}

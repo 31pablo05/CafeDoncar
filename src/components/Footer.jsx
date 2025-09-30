@@ -107,7 +107,7 @@ export default function Footer() {
                         CAFÉ DONCAR
                       </h3>
                       <img 
-                        src="/svg/2(1).svg" 
+                        src="/svg/logodonnuevo.svg" 
                         alt="Logo Café Doncar" 
                         className="h-10 w-10 object-contain group-hover:scale-110 group-hover:rotate-12 transition-all duration-300"
                       />

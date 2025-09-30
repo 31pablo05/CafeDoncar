@@ -48,7 +48,16 @@ export default function HeroSection({ onCategoryFilter }) {
       cta: "Ver Más",
       action: "menu-todos"
     },
-   
+    {
+      id: 5,
+      type: "video",
+      src: "/videos/Diseño sin título (1).mp4",
+      title: "NUEVAS CREACIONES",
+      subtitle: "Descubre nuestros platos más recientes",
+      description: "Innovación y tradición en cada bocado",
+      cta: "Ver Más",
+      action: "menu-todos"
+    }
   ];
 
   // Auto-play del carrusel
