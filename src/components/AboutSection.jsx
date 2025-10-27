@@ -113,7 +113,7 @@ export default function AboutSection() {
                   <video
                     ref={videoRef}
                     className="w-full h-full object-cover rounded-xl sm:rounded-2xl"
-                    poster="/images/hoy n año fantástico y se lo agradecemos a ustedes que nos acompañaron en toda .jpg"
+                    poster="/images/hoy.jpg"
                     controls={false}
                     playsInline
                     autoPlay

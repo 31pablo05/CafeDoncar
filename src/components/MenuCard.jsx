@@ -16,7 +16,7 @@ export default function MenuCard({ item, onAdd }) {
         {/* Imagen con overlay gradiente */}
         <div className="aspect-[4/3] overflow-hidden relative">
           <img 
-            src={item.image || "/placeholder.svg?height=300&width=400&text=400x300px"} 
+            src={item.image || "/placeholder.svg"} 
             alt={item.name} 
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
           />

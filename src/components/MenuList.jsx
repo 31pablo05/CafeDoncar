@@ -35,7 +35,7 @@ export default function MenuList({ items = [], onAddToCart }) {
                 {/* Imagen del producto con overlay en hover */}
                 <div className="aspect-[4/3] overflow-hidden flex-shrink-0 relative">
                   <img 
-                    src={item.image || "/placeholder.svg?height=300&width=400&text=400x300px"} 
+                    src={item.image || "/placeholder.svg"} 
                     alt={item.name} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   />

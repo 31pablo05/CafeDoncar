@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://cafedoncar.com/sitemap.xml
+Sitemap: https://cafedoncar.vercel.app/sitemap.xml
 
 # Crawl delay
 Crawl-delay: 1
@@ -13,6 +13,8 @@ Disallow: /private/
 
 # Allow important pages
 Allow: /menu
-Allow: /nosotros
+Allow: /about
 Allow: /contacto
 Allow: /horarios
+Allow: /reviews
+Allow: /delivery

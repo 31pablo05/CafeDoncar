@@ -179,7 +179,7 @@ export default function HeroSection({ onCategoryFilter }) {
               />
             ) : (
               <img
-                src={slide.src || "/placeholder.svg?height=1080&width=1920&text=1920x1080px"}
+                src={slide.src || "/placeholder.svg"}
                 alt={slide.title}
                 className="w-full h-full object-cover object-center"
               />
