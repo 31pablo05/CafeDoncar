@@ -228,7 +228,7 @@ export default function HeroSection({ onCategoryFilter }) {
 
             {/* Título Principal */}
             <div className="space-y-2 sm:space-y-3">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+              <h1 className="text-fluid-4xl sm:text-fluid-5xl md:text-fluid-6xl font-black leading-tight">
                 <span className="text-white drop-shadow-2xl block animate-fadeInUp" style={{ textShadow: '0 0 20px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.6)' }}>
                   {slides[currentSlide].title.split(' ')[0]}
                 </span>
@@ -237,13 +237,13 @@ export default function HeroSection({ onCategoryFilter }) {
                 </span>
               </h1>
               
-              <h2 className="text-lg sm:text-xl md:text-2xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 font-bold animate-fadeInUp delay-300 drop-shadow-2xl" style={{ filter: 'drop-shadow(0 0 15px rgba(0,0,0,0.8))' }}>
+              <h2 className="text-fluid-lg sm:text-fluid-xl md:text-fluid-2xl text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 font-bold animate-fadeInUp delay-300 drop-shadow-2xl" style={{ filter: 'drop-shadow(0 0 15px rgba(0,0,0,0.8))' }}>
                 {slides[currentSlide].subtitle}
               </h2>
             </div>
 
             {/* Descripción */}
-            <p className="text-sm sm:text-base md:text-lg text-white leading-relaxed max-w-lg sm:max-w-2xl mx-auto lg:mx-0 animate-fadeInUp delay-400 px-4 sm:px-0 drop-shadow-2xl font-medium" style={{ textShadow: '0 0 15px rgba(0,0,0,0.8)' }}>
+            <p className="text-fluid-sm sm:text-fluid-base md:text-fluid-lg text-white leading-relaxed max-w-lg sm:max-w-2xl mx-auto lg:mx-0 animate-fadeInUp delay-400 px-4 sm:px-0 drop-shadow-2xl font-medium" style={{ textShadow: '0 0 15px rgba(0,0,0,0.8)' }}>
               {slides[currentSlide].description}
             </p>
 
@@ -251,7 +251,7 @@ export default function HeroSection({ onCategoryFilter }) {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start animate-fadeInUp delay-500 px-4 sm:px-0">
               <button 
                 onClick={handleCTAClick}
-                className="group text-white px-6 py-3 sm:px-8 sm:py-3 rounded-2xl font-bold text-base sm:text-lg shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1 duration-300 flex items-center justify-center space-x-2" 
+                className="group text-white px-6 py-3 sm:px-8 sm:py-4 rounded-2xl font-bold text-fluid-base sm:text-fluid-lg shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1 duration-300 flex items-center justify-center space-x-2 hover:shadow-amber-500/50" 
                 style={{background: 'linear-gradient(90deg, #fdbc5c 0%, #f59e0b 100%)', boxShadow: '0 10px 30px rgba(253, 188, 92, 0.25)'}}
               >
                 <span>{slides[currentSlide].cta}</span>

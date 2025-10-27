@@ -9,21 +9,21 @@ export default function HowToOrderGuide() {
       icon: <ShoppingCart className="w-6 h-6 sm:w-8 sm:h-8" />,
       title: "Elegí tus favoritos",
       description: "Navegá por nuestro menú y agregá los productos que más te gusten al carrito",
-      color: "from-blue-500 to-blue-600"
+      color: "from-amber-500 to-orange-600"
     },
     {
       number: "2", 
       icon: <CheckCircle className="w-6 h-6 sm:w-8 sm:h-8" />,
       title: "Revisá tu pedido",
       description: "Verificá las cantidades y el total en tu carrito de compras",
-      color: "from-green-500 to-green-600"
+      color: "from-orange-500 to-red-500"
     },
     {
       number: "3",
       icon: <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8" />,
       title: "Enviá por WhatsApp",
       description: "Al finalizar, se abrirá WhatsApp con tu pedido ya armado listo para enviar",
-      color: "from-emerald-500 to-emerald-600"
+      color: "from-red-500 to-amber-600"
     }
   ]
 
@@ -31,7 +31,7 @@ export default function HowToOrderGuide() {
     <div className="mb-8 sm:mb-12 px-2 sm:px-0">
       {/* Header */}
       <div className="text-center mb-6 sm:mb-8">
-        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 sm:mb-3">
+        <h3 className="text-fluid-xl sm:text-fluid-2xl lg:text-fluid-3xl font-bold text-white mb-2 sm:mb-3">
           ¿Cómo hacer tu pedido?
         </h3>
         <div className="w-16 sm:w-20 h-1 mx-auto rounded-full" style={{background: 'linear-gradient(90deg, #fdbc5c 0%, #f59e0b 100%)'}}></div>

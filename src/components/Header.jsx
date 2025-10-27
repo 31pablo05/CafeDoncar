@@ -190,7 +190,7 @@ export default function Header({ cartItemsCount = 0, onCartClick }) {
             
             {/* Logo Mobile */}
             <div className="flex items-center justify-center space-x-3 pb-6 border-b border-gray-100">
-              <img src="/svg/2(1).svg" alt="Cafe Doncar" className="h-10 w-10" />
+              <img src="/svg/logodonnuevo.svg" alt="Cafe Doncar" className="h-10 w-10" />
               <h2 className="text-xl font-bold">
                 <span className="text-gray-800">Cafe</span>
                 <span className="text-amber-500 ml-1">Doncar</span>

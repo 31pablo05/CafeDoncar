@@ -36,7 +36,7 @@ export default function AboutSection() {
     <section 
       id="about"
       ref={sectionRef}
-      className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden"
+      className="relative py-8 sm:py-12 md:py-16 lg:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 overflow-hidden"
     >
       {/* Elementos Decorativos de Fondo Simplificados */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -81,7 +81,7 @@ export default function AboutSection() {
             </div>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 sm:mb-6 leading-tight px-2">
+          <h2 className="text-fluid-3xl sm:text-fluid-4xl md:text-fluid-5xl lg:text-fluid-6xl font-black text-white mb-4 sm:mb-6 leading-tight px-2">
             NUESTRA
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 animate-gradient-x">
               HISTORIA
@@ -94,7 +94,7 @@ export default function AboutSection() {
             <div className="h-px w-10 sm:w-20 bg-gradient-to-l from-transparent to-amber-500"></div>
           </div>
           
-          <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
+          <p className="text-fluid-base sm:text-fluid-lg lg:text-fluid-xl text-gray-300 max-w-2xl mx-auto leading-relaxed px-4 sm:px-0">
             Desde 2020, creando experiencias gastronómicas únicas en el corazón de Trelew
           </p>
         </div>

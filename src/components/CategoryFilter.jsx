@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { ChevronDown, Grid, Filter } from 'lucide-react'
+import { TouchMenuButton } from './ui/TouchButton'
+import { useTouchDevice } from '../hooks/useTouch'
 
 const categoryIcons = {
   'Todos': '🍽️',
@@ -14,6 +16,7 @@ const categoryIcons = {
 
 export default function CategoryFilter({ categories, selectedCategory, onCategoryChange }) {
   const [isOpen, setIsOpen] = useState(false)
+  const isTouchDevice = useTouchDevice()
 
   return (
     <div className="mb-6 sm:mb-8">
@@ -42,10 +45,13 @@ export default function CategoryFilter({ categories, selectedCategory, onCategor
         {/* Desktop Grid */}
         <div className="hidden sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 lg:gap-4">
           {categories.map(category => (
-            <button
+            <TouchMenuButton
               key={category}
               onClick={() => onCategoryChange(category)}
-              className={`group relative overflow-hidden rounded-2xl p-4 lg:p-5 transition-all duration-300 transform hover:scale-105 ${
+              active={selectedCategory === category}
+              className={`group relative overflow-hidden rounded-2xl p-4 lg:p-5 transition-all duration-300 transform ${
+                isTouchDevice ? 'min-h-[56px] min-w-[56px]' : 'hover:scale-105'
+              } ${
                 selectedCategory === category
                   ? 'shadow-2xl'
                   : 'hover:shadow-xl'
@@ -90,20 +96,23 @@ export default function CategoryFilter({ categories, selectedCategory, onCategor
               {selectedCategory === category && (
                 <div className="absolute top-2 right-2 w-3 h-3 bg-white rounded-full shadow-lg animate-pulse"></div>
               )}
-            </button>
+            </TouchMenuButton>
           ))}
         </div>
 
         {/* Mobile List */}
         <div className="sm:hidden space-y-2 pt-2">
           {categories.map(category => (
-            <button
+            <TouchMenuButton
               key={category}
               onClick={() => {
                 onCategoryChange(category)
                 setIsOpen(false)
               }}
+              active={selectedCategory === category}
               className={`w-full flex items-center gap-3 p-3 rounded-xl transition-all duration-300 ${
+                isTouchDevice ? 'min-h-[48px]' : ''
+              } ${
                 selectedCategory === category
                   ? 'shadow-lg transform scale-105'
                   : 'hover:shadow-md'
@@ -136,7 +145,7 @@ export default function CategoryFilter({ categories, selectedCategory, onCategor
               {selectedCategory === category && (
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
               )}
-            </button>
+            </TouchMenuButton>
           ))}
         </div>
       </div>

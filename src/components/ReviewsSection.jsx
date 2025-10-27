@@ -106,7 +106,7 @@ export default function ReviewsSection() {
   const reviewsToShow = showAllReviews ? reviews : reviews.slice(0, 3);
 
   return (
-    <section id="resenas" className="relative py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white overflow-hidden">
+    <section id="resenas" className="relative py-8 sm:py-12 md:py-16 lg:py-24 bg-gradient-to-br from-gray-950 via-gray-900 to-black text-white overflow-hidden">
       {/* Elementos Decorativos de Fondo */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 sm:top-20 left-4 sm:left-20 w-48 sm:w-96 h-48 sm:h-96 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-red-500/10 rounded-full blur-3xl animate-pulse opacity-60"></div>
@@ -138,7 +138,7 @@ export default function ReviewsSection() {
             </div>
           </div>
           
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 sm:mb-6 leading-tight px-2">
+          <h2 className="text-fluid-2xl sm:text-fluid-3xl md:text-fluid-4xl lg:text-fluid-5xl font-black text-white mb-4 sm:mb-6 leading-tight px-2">
             LO QUE DICEN
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 animate-gradient-x">
               NUESTROS CLIENTES

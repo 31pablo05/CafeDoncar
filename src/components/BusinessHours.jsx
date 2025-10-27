@@ -57,7 +57,7 @@ export default function BusinessHours() {
       {/* Fondos decorativos */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-amber-500/10 via-orange-500/5 to-red-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-blue-500/5 via-purple-500/10 to-pink-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-red-500/5 via-orange-500/10 to-amber-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,7 +73,7 @@ export default function BusinessHours() {
               </div>
             </div>
             
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+            <h2 className="text-fluid-4xl md:text-fluid-5xl font-black text-white mb-6 leading-tight">
               ESTAMOS
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-500 to-red-500">
                 DISPONIBLES

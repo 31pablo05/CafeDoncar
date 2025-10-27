@@ -30,8 +30,8 @@ export default function Footer() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Orbes animados con gradientes dinámicos */}
         <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-red-500/15 rounded-full blur-3xl animate-float-custom opacity-60"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-red-500/10 via-pink-500/15 to-purple-500/10 rounded-full blur-3xl animate-float-delayed opacity-50"></div>
-        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-r from-blue-500/8 via-cyan-500/12 to-teal-500/8 rounded-full blur-2xl animate-pulse-slow"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-red-500/10 via-orange-500/15 to-amber-500/10 rounded-full blur-3xl animate-float-delayed opacity-50"></div>
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-gradient-to-r from-orange-500/8 via-red-500/12 to-amber-500/8 rounded-full blur-2xl animate-pulse-slow"></div>
         
         {/* Patrón de rejilla sutil */}
         <div className="absolute inset-0 opacity-5">
@@ -151,11 +151,11 @@ export default function Footer() {
           {/* Columna 2: Información de Contacto */}
           <div className={`space-y-6 transition-all duration-1000 delay-600 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
             <div className="relative group">
-              <div className="absolute -inset-2 bg-gradient-to-r from-green-500/20 via-emerald-500/30 to-teal-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute -inset-2 bg-gradient-to-r from-amber-500/20 via-orange-500/30 to-red-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-6 border border-green-500/20 hover:border-green-500/40 transition-all duration-500 h-full">
+              <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-3xl p-6 border border-amber-500/20 hover:border-amber-500/40 transition-all duration-500 h-full">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="p-3 bg-gradient-to-r from-green-500 to-emerald-600 rounded-xl shadow-lg">
+                  <div className="p-3 bg-gradient-to-r from-amber-500 to-orange-600 rounded-xl shadow-lg">
                     <Phone className="h-6 w-6 text-white" />
                   </div>
                   <h4 className="text-xl font-bold text-white">Contacto</h4>
@@ -163,10 +163,10 @@ export default function Footer() {
                 
                 <div className="space-y-4">
                   {[
-                    { icon: MapPin, text: "Pellegrini 1624, Trelew, Chubut", link: "https://maps.google.com/?q=Pellegrini+1624,+Trelew,+Chubut", color: "text-blue-400" },
-                    { icon: Phone, text: "280 4518716", link: "tel:2804518716", color: "text-green-400" },
-                    { icon: Instagram, text: "@cafedoncar", link: "https://www.instagram.com/cafedoncar/", color: "text-pink-400" },
-                    { icon: Clock, text: "Lun-Dom: 18:00 - 00:30", link: null, color: "text-amber-400" }
+                    { icon: MapPin, text: "Pellegrini 1624, Trelew, Chubut", link: "https://maps.google.com/?q=Pellegrini+1624,+Trelew,+Chubut", color: "text-amber-400" },
+                    { icon: Phone, text: "280 4518716", link: "tel:2804518716", color: "text-orange-400" },
+                    { icon: Instagram, text: "@cafedoncar", link: "https://www.instagram.com/cafedoncar/", color: "text-red-400" },
+                    { icon: Clock, text: "Lun-Dom: 18:00 - 00:30", link: null, color: "text-amber-300" }
                   ].map((contact, index) => (
                     <div key={index} className="group/contact flex items-start space-x-3 p-3 hover:bg-gradient-to-r hover:from-green-500/10 hover:to-emerald-500/10 rounded-xl transition-all duration-300 border border-transparent hover:border-green-500/30">
                       <contact.icon className={`h-5 w-5 ${contact.color} group-hover/contact:scale-110 transition-transform duration-300 flex-shrink-0 mt-0.5`} />

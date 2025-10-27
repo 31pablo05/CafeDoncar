@@ -5,13 +5,13 @@ import FavoritesButton from "./FavoritesButton";
 export default function MenuCard({ item, onAdd }) {
   return (
     <div className="group relative">
-      {/* Efecto de brillo de fondo */}
-      <div className="absolute -inset-0.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 animate-pulse" 
+      {/* Efecto de brillo de fondo mejorado */}
+      <div className="absolute -inset-0.5 rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer" 
            style={{background: 'linear-gradient(45deg, #fec15d, #f59e0b, #fec15d)'}}>
       </div>
       
       {/* Card principal */}
-      <div className="relative backdrop-blur-md bg-white/10 border border-white/20 hover:border-amber-400/30 overflow-hidden rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/20">
+      <div className="relative backdrop-blur-md bg-white/10 border border-white/20 hover:border-amber-400/50 overflow-hidden rounded-2xl transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-amber-500/25">
         
         {/* Imagen con overlay gradiente */}
         <div className="aspect-[4/3] overflow-hidden relative">
@@ -29,7 +29,7 @@ export default function MenuCard({ item, onAdd }) {
           
           {/* Badge de categoría flotante */}
           <div className="absolute top-3 left-3">
-            <span className="text-white font-bold px-3 py-1.5 rounded-full text-xs shadow-lg backdrop-blur-sm border border-amber-400/30" 
+            <span className="text-white font-bold px-3 py-1.5 rounded-full text-xs shadow-lg backdrop-blur-sm border border-amber-400/30 group-hover:animate-bounce-gentle transition-all duration-300" 
                   style={{background: 'linear-gradient(135deg, rgba(254, 193, 93, 0.9) 0%, rgba(245, 158, 11, 0.9) 100%)'}}>
               {item.category}
             </span>
@@ -61,14 +61,14 @@ export default function MenuCard({ item, onAdd }) {
             {/* Botón ADD mejorado */}
             <button 
               onClick={() => onAdd(item)} 
-              className="relative overflow-hidden text-white rounded-xl px-6 py-2.5 font-bold shadow-lg hover:shadow-amber-500/30 transform hover:scale-110 transition-all duration-300 flex items-center gap-2 group/btn"
+              className="relative overflow-hidden text-white rounded-xl px-6 py-2.5 font-bold shadow-lg hover:shadow-amber-500/40 transform hover:scale-110 hover:-translate-y-1 transition-all duration-500 flex items-center gap-2 group/btn hover:animate-glow"
               style={{background: 'linear-gradient(135deg, #fec15d 0%, #f59e0b 50%, #d97706 100%)'}}
             >
-              {/* Efecto de brillo del botón */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"></div>
+              {/* Efecto de brillo del botón mejorado */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent -skew-x-12 translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-1000"></div>
               
-              <span className="relative z-10">ADD</span>
-              <div className="relative z-10 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center">
+              <span className="relative z-10 group-hover/btn:text-yellow-100 transition-colors duration-300">ADD</span>
+              <div className="relative z-10 w-5 h-5 rounded-full bg-white/20 flex items-center justify-center group-hover/btn:bg-white/30 group-hover/btn:animate-bounce-gentle transition-all duration-300">
                 <span className="text-xs">+</span>
               </div>
             </button>
